@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: 333;
+  background-image: linear-gradient(
+    120deg,
+    #fff,
+    #eee,
+    rgb(229, 229, 229),
+    #d6d6d6,
+    #ffcf8c,
+    #fea954,
+    #ff954f,
+    #d35400
+  );
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #d35400;
+}
+header p {
+  font-style: italic;
+  color: #555;
+}
+
+.recipe-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.recipe-image img {
+  border-radius: 10px;
+  min-width: 15%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ingredients,
+.steps {
+  margin-bottom: 2rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.ingredients h2,
+.steps h2 {
+  color: #d35400;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .ingredients,
+  .steps {
+    padding: 0.8rem 1rem;
+  }
+
+  .recipe-image {
+    width: 100%;
+  }
+
+  .ingredients,
+  .steps {
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 1.5rem;
+  }
+}
